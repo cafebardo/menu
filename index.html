@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,13 +14,14 @@
         }
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #A6A6A6; /* Tu color de fondo */
+            background-color: #A6A6A6;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
+            height: 100dvh; /* Forzar el alto de la pantalla del celular */
             padding: 20px;
+            overflow: hidden; /* Esto bloquea el deslizamiento/scroll molesto */
         }
         .container {
             text-align: center;
@@ -27,10 +29,9 @@
             width: 100%;
         }
         .logo {
-            max-width: 220px; /* Tamaño ideal para que destaque tu logo vertical */
+            max-width: 220px;
             height: auto;
-            margin-bottom: 50px;
-            /* Al ser transparente, se fusionará perfecto con el fondo */
+            margin-bottom: 30px; /* Separación con los botones */
         }
         .menu-options {
             display: flex;
@@ -42,8 +43,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #A6A6A6; /* Mismo fondo que la pantalla */
-            color: #FFC700; /* Letras en el amarillo que pediste */
+            background-color: #A6A6A6;
+            color: #FFC700;
             text-decoration: none;
             padding: 22px;
             border-radius: 16px;
@@ -51,13 +52,10 @@
             font-weight: 600;
             letter-spacing: 1.5px;
             text-transform: uppercase;
-            
-            /* El contorno fluido: borde sutil y sombras suaves (neumorfismo) */
             border: 1px solid rgba(255, 199, 0, 0.4);
             box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.3);
             transition: all 0.2s ease;
         }
-        /* Efecto al presionar el botón en el celular */
         .box:active {
             transform: scale(0.97);
             box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1), inset -4px -4px 10px rgba(255, 255, 255, 0.2);
